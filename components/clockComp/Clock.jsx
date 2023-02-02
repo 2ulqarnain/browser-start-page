@@ -19,8 +19,8 @@ export default function Clock() {
     
   return (
     <div className={`text-center ${fred_font.className}`}>
-        <h4 className='text-9xl text-green-500'>{time.toLocaleTimeString('en-uk',{hour:"numeric"})}</h4>
-        <h4 className='text-9xl text-blue-500'>{time.toLocaleTimeString('en-uk',{minute:"numeric"})}</h4>
+        <h4 className='text-9xl text-green-500'>{time.toLocaleTimeString('en-uk',{hour:"2-digit"})}</h4>
+        <h4 className='text-9xl text-blue-500'>{time.toLocaleTimeString('en-uk',{minute:"2-digit"})}</h4>
         <h4 className='text-2xl text-zinc-400'>{time.toLocaleString('en-uk',{dateStyle:"full"})}</h4>
     </div>
   )

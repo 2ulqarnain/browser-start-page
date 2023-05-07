@@ -15,9 +15,13 @@ export default function Home() {
     'text-pink-400'
   ];
 
+  const primaryColorClass=tailwindColors[Math.floor(Math.random()*10)];
+  const secondaryColorClass=tailwindColors[Math.floor(Math.random()*10)];
+  console.log(primaryColorClass,secondaryColorClass)
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-center">
-      <Time primaryColorClass={tailwindColors[Math.floor(Math.random()*10)]} secondaryColorClass={tailwindColors[Math.floor(Math.random()*10)]}/>
+      <Time primaryColorClass={primaryColorClass} secondaryColorClass={secondaryColorClass}/>
     </main>
   );
 }

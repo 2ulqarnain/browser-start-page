@@ -1,7 +1,9 @@
 import './globals.css'
-import { Monoton } from 'next/font/google'
+import {Elsie, Satisfy, Trochut} from 'next/font/google'
 
-const monoton = Monoton({subsets:['latin'],weight:'400',variable:"--font-monoton"})
+const elsie=Elsie({subsets:['latin'],weight:'400',variable:"--font-elsie"})
+const trochut=Trochut({subsets:['latin'],weight:'400',variable:"--font-trochut"})
+const satisfy = Satisfy({subsets:['latin'],weight:'400',variable:"--font-satisfy"})
 
 export default function RootLayout({
   children,
@@ -10,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${monoton.variable} dark:text-seagull dark:bg-crow`}>{children}</body>
+      <body className={`${satisfy.variable} ${elsie.variable} ${trochut.variable} dark:text-seagull dark:bg-crow`}>{children}</body>
     </html>
   )
 }
